@@ -621,9 +621,9 @@ const SCREENS = {
     );
     const primeiroNome = (state.form.nome || "").trim().split(" ")[0];
     const saud = primeiroNome ? `Oi, meu nome é ${primeiroNome}.` : `Oi!`;
-    const mentoriaMsg = `Olá! ${saud} Fiz o Diagnóstico Bússola Tech e meu resultado foi Nível ${info.title} (${r.total}/36 pontos). Quero saber mais sobre a Mentoria Bússola Tech.`;
-    const raizesMsg = `Olá! ${saud} Fiz o Diagnóstico Bússola Tech, meu resultado foi Nível Direção e já tenho uma área escolhida. Quero saber mais sobre a Mentoria Raízes em Tech.`;
-    const saberMaisMsg = `Olá! ${saud} Fiz o Diagnóstico Bússola Tech e quero saber mais sobre a Mentoria Bússola Tech antes de decidir.`;
+    const mentoriaMsg = `${saud} Fiz o Diagnóstico Bússola Tech e meu resultado foi Nível ${info.title} (${r.total}/36 pontos). Quero saber mais sobre a Mentoria Bússola Tech.`;
+    const raizesMsg = `${saud} Fiz o Diagnóstico Bússola Tech, meu resultado foi Nível Direção e já tenho uma área escolhida. Quero saber mais sobre a Mentoria Raízes em Tech.`;
+    const saberMaisMsg = `${saud} Fiz o Diagnóstico Bússola Tech e quero saber mais sobre a Mentoria Bússola Tech antes de decidir.`;
     return `
       <div class="eyebrow">Seu resultado</div>
       <div class="result-banner ${info.key}-r">
